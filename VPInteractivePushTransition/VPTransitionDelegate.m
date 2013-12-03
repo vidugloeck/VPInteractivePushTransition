@@ -8,6 +8,11 @@
 
 #import "VPTransitionDelegate.h"
 #import "VPTransitionAnimator.h"
+#import "VPTransitionInteractor.h"
+
+@interface VPTransitionDelegate ()
+@property (nonatomic, strong) VPTransitionInteractor *transitionInteractor;
+@end
 
 @implementation VPTransitionDelegate
 
@@ -15,9 +20,20 @@
                                   animationControllerForOperation:(UINavigationControllerOperation)operation
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC {
+    if (operation == UINavigationControllerOperationPush) {
+        self.transitionInteractor = [[VPTransitionInteractor alloc] initWithViewController:toVC];
+    }
     VPTransitionAnimator *transitionAnimator = [[VPTransitionAnimator alloc] init];
     transitionAnimator.operation = operation;
     return transitionAnimator;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                         interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
+    if (self.transitionInteractor.isInteractiveTransition) {
+        return self.transitionInteractor;
+    }
+    return nil;
 }
 
 @end
