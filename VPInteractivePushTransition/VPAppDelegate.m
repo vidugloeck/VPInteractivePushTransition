@@ -8,6 +8,11 @@
 
 #import "VPAppDelegate.h"
 #import "VPFirstViewController.h"
+#import "VPTransitionDelegate.h"
+
+@interface VPAppDelegate ()
+@property (nonatomic, strong) VPTransitionDelegate *transitionDelegate;
+@end
 
 @implementation VPAppDelegate
 
@@ -20,6 +25,8 @@
     VPFirstViewController *firstViewController = [[VPFirstViewController alloc] initWithNibName:nil
                                                                                          bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:firstViewController];
+    self.transitionDelegate = [[VPTransitionDelegate alloc] init];
+    navController.delegate = self.transitionDelegate;
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;

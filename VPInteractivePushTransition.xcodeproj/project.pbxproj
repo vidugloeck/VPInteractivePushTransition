@@ -21,6 +21,8 @@
 		12C7E83B184D82F900CD6357 /* VPInteractivePushTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E83A184D82F900CD6357 /* VPInteractivePushTransitionTests.m */; };
 		12C7E848184D842F00CD6357 /* VPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E845184D842F00CD6357 /* VPFirstViewController.m */; };
 		12C7E849184D842F00CD6357 /* VPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E847184D842F00CD6357 /* VPSecondViewController.m */; };
+		12C7E84C184D87D600CD6357 /* VPTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E84B184D87D600CD6357 /* VPTransitionDelegate.m */; };
+		12C7E84F184D88BE00CD6357 /* VPTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E84E184D88BE00CD6357 /* VPTransitionAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		12C7E845184D842F00CD6357 /* VPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPFirstViewController.m; sourceTree = "<group>"; };
 		12C7E846184D842F00CD6357 /* VPSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSecondViewController.h; sourceTree = "<group>"; };
 		12C7E847184D842F00CD6357 /* VPSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSecondViewController.m; sourceTree = "<group>"; };
+		12C7E84A184D87D600CD6357 /* VPTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPTransitionDelegate.h; sourceTree = "<group>"; };
+		12C7E84B184D87D600CD6357 /* VPTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPTransitionDelegate.m; sourceTree = "<group>"; };
+		12C7E84D184D88BE00CD6357 /* VPTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPTransitionAnimator.h; sourceTree = "<group>"; };
+		12C7E84E184D88BE00CD6357 /* VPTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPTransitionAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,10 @@
 				12C7E845184D842F00CD6357 /* VPFirstViewController.m */,
 				12C7E846184D842F00CD6357 /* VPSecondViewController.h */,
 				12C7E847184D842F00CD6357 /* VPSecondViewController.m */,
+				12C7E84A184D87D600CD6357 /* VPTransitionDelegate.h */,
+				12C7E84B184D87D600CD6357 /* VPTransitionDelegate.m */,
+				12C7E84D184D88BE00CD6357 /* VPTransitionAnimator.h */,
+				12C7E84E184D88BE00CD6357 /* VPTransitionAnimator.m */,
 				12C7E827184D82F900CD6357 /* Images.xcassets */,
 				12C7E81C184D82F900CD6357 /* Supporting Files */,
 			);
@@ -251,9 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C7E849184D842F00CD6357 /* VPSecondViewController.m in Sources */,
+				12C7E84F184D88BE00CD6357 /* VPTransitionAnimator.m in Sources */,
 				12C7E848184D842F00CD6357 /* VPFirstViewController.m in Sources */,
 				12C7E826184D82F900CD6357 /* VPAppDelegate.m in Sources */,
 				12C7E822184D82F900CD6357 /* main.m in Sources */,
+				12C7E84C184D87D600CD6357 /* VPTransitionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
