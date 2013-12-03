@@ -19,6 +19,8 @@
 		12C7E831184D82F900CD6357 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C7E819184D82F900CD6357 /* UIKit.framework */; };
 		12C7E839184D82F900CD6357 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12C7E837184D82F900CD6357 /* InfoPlist.strings */; };
 		12C7E83B184D82F900CD6357 /* VPInteractivePushTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E83A184D82F900CD6357 /* VPInteractivePushTransitionTests.m */; };
+		12C7E848184D842F00CD6357 /* VPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E845184D842F00CD6357 /* VPFirstViewController.m */; };
+		12C7E849184D842F00CD6357 /* VPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E847184D842F00CD6357 /* VPSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		12C7E836184D82F900CD6357 /* VPInteractivePushTransitionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VPInteractivePushTransitionTests-Info.plist"; sourceTree = "<group>"; };
 		12C7E838184D82F900CD6357 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12C7E83A184D82F900CD6357 /* VPInteractivePushTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPInteractivePushTransitionTests.m; sourceTree = "<group>"; };
+		12C7E844184D842F00CD6357 /* VPFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPFirstViewController.h; sourceTree = "<group>"; };
+		12C7E845184D842F00CD6357 /* VPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPFirstViewController.m; sourceTree = "<group>"; };
+		12C7E846184D842F00CD6357 /* VPSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSecondViewController.h; sourceTree = "<group>"; };
+		12C7E847184D842F00CD6357 /* VPSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,10 @@
 			children = (
 				12C7E824184D82F900CD6357 /* VPAppDelegate.h */,
 				12C7E825184D82F900CD6357 /* VPAppDelegate.m */,
+				12C7E844184D842F00CD6357 /* VPFirstViewController.h */,
+				12C7E845184D842F00CD6357 /* VPFirstViewController.m */,
+				12C7E846184D842F00CD6357 /* VPSecondViewController.h */,
+				12C7E847184D842F00CD6357 /* VPSecondViewController.m */,
 				12C7E827184D82F900CD6357 /* Images.xcassets */,
 				12C7E81C184D82F900CD6357 /* Supporting Files */,
 			);
@@ -240,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C7E849184D842F00CD6357 /* VPSecondViewController.m in Sources */,
+				12C7E848184D842F00CD6357 /* VPFirstViewController.m in Sources */,
 				12C7E826184D82F900CD6357 /* VPAppDelegate.m in Sources */,
 				12C7E822184D82F900CD6357 /* main.m in Sources */,
 			);
